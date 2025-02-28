@@ -123,7 +123,10 @@ https://github.com/user-attachments/assets/837770c8-5451-4149-8491-995c29850677
 # Configurações do Postman
 
 Criei duas variáveis de ambiente do postman
+
 base_url: http://localhost:8000/gateway/api/v1
+
 api_key: api gerada no passo 6
+
 
 Collection do postman se encontra na pasta ./postman/
