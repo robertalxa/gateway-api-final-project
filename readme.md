@@ -7,6 +7,8 @@
 - Foram criadas duas interfaces para modelar as entidades descritas no exercício (autor e livro), as mesmas se encontram também no mesmo arquivo citado acima;
 - O método de autenticação utilizado foi o API Key do Kong.
 
+
+
 ## Rotas Originais da API
 
 - GET http://localhost:3030/api/v1/autor → Retorna a lista de todos os Autores e seus livros;
@@ -14,6 +16,8 @@
 - GET http://localhost:3030/api/v1/autor/1/livro → Retorna a lista de livros correspondentes ao Autor passado via parâmetro
 - POST http://localhost:3030/api/v1/autor → Cria um Autor;
 - POST http://localhost:3030/api/v1/autor/1/livro → Cria um livro para o Autor passado via parâmetro.
+
+
 
 ## Rotas Pós Configuração do Gateway API
 
@@ -25,7 +29,10 @@
 
 _Nessas novas rotas é necessário passar o apikey via header_
 
+
+
 # Como rodar o projeto?
+
 
 ## Rodar a API em NodeJS
 
@@ -45,6 +52,8 @@ npm run dev
 ```
 
 - Após a API exibir a mensagem "Listening on port XXXX" é hora de partir para o kong
+
+
 
 ## Configurar o Kong
 
@@ -109,3 +118,16 @@ Por fim, para finalizar o kong e zerar suas configurações é só executar:
 ```
 
 Vou deixar abaixo um vídeo demonstrando todo o passo a passo descrito acima e também mostrando que tudo está funcionando bonitinho. :)
+
+
+Realizando as configurações
+
+https://github.com/user-attachments/assets/b1e0103a-d305-43e8-8796-117325eced96
+
+
+
+Realizando as requisições:
+
+https://github.com/user-attachments/assets/837770c8-5451-4149-8491-995c29850677
+
+
