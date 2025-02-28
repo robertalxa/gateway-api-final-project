@@ -20,7 +20,6 @@ interface Autor {
   numero: number;
   Nome: string;
   livros?: Livro[];
-  index?: number;
 }
 
 interface Livro {
