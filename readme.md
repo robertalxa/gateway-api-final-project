@@ -60,6 +60,8 @@ _Obs: eu utilizei o wsl para rodar os comandos então os passos abaixo estão ba
 
 - Em seguida para criar o serviço execute:
 
+**MODIFICAR NESTE ARQUIVO 0002_criandoServico.sh o IP do Servidor que está rodando a API original**
+
 ```
 ./kong/0002_criandoServico.sh
 ```
@@ -109,3 +111,19 @@ Por fim, para finalizar o kong e zerar suas configurações é só executar:
 ```
 
 Vou deixar abaixo um vídeo demonstrando todo o passo a passo descrito acima e também mostrando que tudo está funcionando bonitinho. :)
+
+Realizando as configurações
+
+https://github.com/user-attachments/assets/b1e0103a-d305-43e8-8796-117325eced96
+
+Realizando as requisições:
+
+https://github.com/user-attachments/assets/837770c8-5451-4149-8491-995c29850677
+
+# Configurações do Postman
+
+Criei duas variáveis de ambiente do postman
+base_url: http://localhost:8000/gateway/api/v1
+api_key: api gerada no passo 6
+
+Collection do postman se encontra na pasta ./postman/
