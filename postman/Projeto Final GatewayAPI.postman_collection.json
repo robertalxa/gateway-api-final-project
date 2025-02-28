@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "cb05e54c-bb46-4ecd-9660-7d0a6db3c7fb",
+		"name": "Projeto Final GatewayAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41487249"
+	},
+	"item": [
+		{
+			"name": "Retorna Todos Autores",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/autor",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"autor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna Autor Por Número",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/autor/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"autor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna Livros do Autor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/autor/1/livro",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"autor",
+						"1",
+						"livro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria Autor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero\": 1,\r\n    \"Nome\": \"Robert\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/autor",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"autor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria Livro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"numero\": 1,\r\n\t\"Titulo\": \"Coraline\",\r\n\t\"Edicao\" :\"Primeira\",\r\n\t\"ISBN\": \"123\",\r\n\t\"Categoria\": \"Juvenil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/autor/1/livro",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"autor",
+						"1",
+						"livro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
